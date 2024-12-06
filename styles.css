@@ -1,0 +1,357 @@
+/* ================== Estilos generales=================== */
+body{
+    font-family: "Permanent Marker", cursive;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Permanent Marker", cursive;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #000dfc;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Permanent Marker", cursive;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+
+/* -----------Estilos del NAVBAR------------------ */
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ------------ Estilos para el Hero -------------------- */
+
+.hero {
+    background-image:url(imagenes/background-tecnologia.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+ }
+ 
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    /* Redondea la imagen */
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.hero-principal h2 , h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+ /* ----------Estilos del About Me------------------ */
+
+ .sobre-mi {
+    height: 500px;
+    padding: 10px;
+ }
+ 
+ .sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+ }
+
+
+/* ----------Proyecto reciente------------------ */
+.proyectos-recientes {
+    padding: 40px;
+}
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.proyectos-contenedor{
+    padding: 60px;
+    margin-bottom: 40px;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto{
+    position:relative;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+
+ /* ---------------Experiencia-------------------- */
+
+ .experiencia{
+    padding: 40px 40px 60px 40px;
+ }
+
+ .experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+ }
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ADE30;
+    background-color: #0a0a23;
+    padding: 8px, 19px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.experiencia-titulo{
+    font-size: 25PX;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+
+ /* ---------------Opiniones Carousel-------------------- */
+.testimonios{
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item{
+    height: 500px;
+}
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonios-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+.testimonios-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonios-info {
+    font-weight: bold;
+    text-align: center;
+}
+.testimonios-info p {
+    margin-bottom: 0;
+}
+
+.testimonios-footer .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonios-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+ /* ---------------Contacto-------------------- */
+
+ .contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+ }
+
+ .contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(46, 178, 255);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px;
+ }
+ .contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+ }
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25rem 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* -------------- Footer -------------- */
+.contacto p{
+    font-size: 1.2rem;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #000dfc;
+    min-height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icono{
+    font-size: 5rem;
+}
+
+.icon {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin: 20px;
+}
+
+.icon-elem {
+    list-style: none;
+}
+
+.icon-elem a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem; 
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.icon-elem a:hover {
+    color: black;
+    transform: scale(1.2); 
+}
+  
+
+
+
+/* Medias querys para la responsividad */
+@media screen and (max-width: 767px) {
+    .navbar-brand img {
+    padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 720px){
+    .hero-inferior-imagen {
+        max-width: 650px;
+    }
+}
+    
